@@ -1,0 +1,8 @@
+{
+  "name": "tryhard-app",
+  "version": "1.0.0",
+  "description": "An app to help organise tournaments for the Big Enjoy Discord Server",
+  "main": "index.js",
+  "author": "Shane Massaad",
+  "license": "MIT"
+}
