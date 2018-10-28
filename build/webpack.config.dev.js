@@ -29,17 +29,31 @@ module.exports = {
         test: /\.css$/,
         use: [
           'vue-style-loader',
-          'css-loader'
+          'css-loader',
+          'stylus-loader'
         ]
       },
       {
         test: /\.js$/,
-        use: 'babel-loader'
+        use: 'babel-loader?compact=false'
       },
       {
         test: /\.(js|vue)$/,
         use: 'eslint-loader',
         enforce: 'pre'
+      },
+      {
+        test: /\.svg$/,
+        use: 'svg-url-loader'
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'fonts/[name].[ext]'
+          }
+        }
       }
     ]
   },
