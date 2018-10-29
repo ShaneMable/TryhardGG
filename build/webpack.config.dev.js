@@ -29,8 +29,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           'vue-style-loader',
-          'css-loader',
-          'stylus-loader'
+          'css-loader'
         ]
       },
       {
@@ -73,5 +72,5 @@ module.exports = {
       to: resolve('dist/static/img'),
       toType: 'dir'
     }])
-  ],
+  ]
 }
